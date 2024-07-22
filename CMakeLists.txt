@@ -101,7 +101,7 @@ endif()
 
 
 
-find_package(Boost REQUIRED COMPONENTS
+find_package(boost REQUIRED COMPONENTS
              program_options
              filesystem
              graph
@@ -123,14 +123,14 @@ else()
   message(STATUS "EIGEN: " ${EIGEN_VERSION} " (external)")
 endif()
 
-#find_package(FreeImage REQUIRED)
+# find_package(FreeImage REQUIRED)
 find_package(freeimage REQUIRED)
 
 find_package(Glog REQUIRED)
 
 set(OpenGL_GL_PREFERENCE GLVND)
 find_package(OpenGL REQUIRED)
-#find_package(Glew REQUIRED)
+# find_package(Glew REQUIRED)
 find_package(glew REQUIRED)
 find_package(Git)
 
